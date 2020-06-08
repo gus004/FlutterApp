@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "239791338281",
+    "firebase_url": "https://controletest-d6286.firebaseio.com",
+    "project_id": "controletest-d6286",
+    "storage_bucket": "controletest-d6286.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239791338281:android:de39ee8e67b64bb44a3d38",
+        "android_client_info": {
+          "package_name": "com.example.flutterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239791338281-k0hu5re0aef8dueobnh2fqri6h493lbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutterapp",
+            "certificate_hash": "942c00354a84a6e63861d09929a6ae7a1ff9d9b9"
+          }
+        },
+        {
+          "client_id": "239791338281-koc2v84ok59deiubtoi1cv84tjqj0s1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGGDO6xgJ4YY1VqFguN3EmdA1746hqstQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239791338281-koc2v84ok59deiubtoi1cv84tjqj0s1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
