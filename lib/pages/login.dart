@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/pages/cadastro.dart';
-import 'package:flutterapp/model/Usuario.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutterapp/pages/home.dart';
+import 'package:com/pages/cadastro.dart';
+import 'package:com/model/Usuario.dart';
+import 'package:com/pages/home1.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-
-import 'home.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -63,7 +59,7 @@ class _LoginState extends State<Login> {
 
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => Home()),
+        MaterialPageRoute(builder: (context) => HomePage()),
             (Route<dynamic> route) => false,
       );
 

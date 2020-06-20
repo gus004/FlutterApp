@@ -1,7 +1,6 @@
+import 'package:com/pages/home1.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterapp/pages/home.dart';
-import 'package:flutterapp/model/Usuario.dart';
-import 'package:flutter/material.dart';
+import 'package:com/model/Usuario.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class Cadastro extends StatefulWidget {
@@ -64,7 +63,7 @@ class _CadastroState extends State<Cadastro> {
       // Se usuário cadastrado, loga no sistema
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => Home()),
+        MaterialPageRoute(builder: (context) => HomePage()),
             (Route<dynamic> route) => false,
       );
     }).catchError((error) {
