@@ -1,7 +1,7 @@
-class Temperatura{
+class TemperaturaClass{
   String _temp;
 
-  Temperatura(this._temp);
+  TemperaturaClass(this._temp);
 
   String get temp => _temp;
 

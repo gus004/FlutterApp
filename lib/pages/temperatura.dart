@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:com/model/Temperatura.dart';
+import 'package:com/model/TemperaturaClass.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Temperatura extends StatefulWidget {
@@ -20,7 +20,6 @@ class _TemperaturaState extends State<Temperatura> {
             case ConnectionState.done :
 
             case ConnectionState.waiting :
-              print("WAITING");
               return Center(
                 child: Column(
                   children: <Widget>[
@@ -50,7 +49,7 @@ class _TemperaturaState extends State<Temperatura> {
                           List<DocumentSnapshot> temperaturas = querySnapshot.documents.toList();
                           DocumentSnapshot dados = temperaturas[index];
 
-                          Temperatura temperatura = Temperatura(dados["temp"]);
+                          TemperaturaClass temperatura = TemperaturaClass(dados["temp"]);
 
                           return Card(
                             child: Column(
@@ -80,8 +79,12 @@ class _TemperaturaState extends State<Temperatura> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Seus pets"),
-          centerTitle: true,
+          backgroundColor: Colors.blue.withOpacity(0.3),
+          title: Center(
+            child: Text('TEMPERATURAS',
+              style: TextStyle(fontFamily: 'Oswald', color: Colors.white),
+            ),
+          ),
         ),
         floatingActionButton:
         FloatingActionButton(child: Icon(Icons.add), onPressed: null),
