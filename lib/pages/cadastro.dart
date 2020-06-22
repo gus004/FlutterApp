@@ -1,6 +1,6 @@
-import 'package:com/pages/home1.dart';
+import 'package:flutterapp/pages/home1.dart';
 import 'package:flutter/material.dart';
-import 'package:com/model/Usuario.dart';
+import 'package:flutterapp/model/Usuario.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class Cadastro extends StatefulWidget {

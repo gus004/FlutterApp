@@ -13,9 +13,9 @@ class _SobreState extends State<Sobre> {
     return Container(
       width: width,
       height: height/3,
-      padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
+      padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
       decoration: BoxDecoration(
-          color: Colors.blue,
+          color: Colors.white70,
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(16),
               topLeft: Radius.circular(16)

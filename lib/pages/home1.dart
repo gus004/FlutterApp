@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:com/pages/configuracoes.dart';
-import 'package:com/pages/temperatura.dart';
-import 'package:com/pages/sobre.dart';
+import 'package:flutterapp/pages/configuracoes.dart';
+import 'package:flutterapp/pages/temperatura.dart';
+import 'package:flutterapp/pages/sobre.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
       height: height/3,
       padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
       decoration: BoxDecoration(
-          color: Colors.blue,
+          color: Colors.white70,
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(16),
               topLeft: Radius.circular(16)
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.only(top: 0, left: 20, right: 20),
+          padding: EdgeInsets.only(top: 0, left: 40, right: 40,bottom: 0),
           child: Image.asset( "assets/images/logo.png" ),
         ),
       ],

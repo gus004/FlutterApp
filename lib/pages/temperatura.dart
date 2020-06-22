@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:com/model/TemperaturaClass.dart';
+import 'package:flutterapp/model/TemperaturaClass.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Temperatura extends StatefulWidget {
@@ -86,41 +86,7 @@ class _TemperaturaState extends State<Temperatura> {
             ),
           ),
         ),
-        floatingActionButton:
-        FloatingActionButton(child: Icon(Icons.add), onPressed: null),
-        bottomNavigationBar: BottomAppBar(
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                IconButton(
-                    icon: Icon(
-                      Icons.home,
-                      color: Colors.blue,
-                    ),
-                    onPressed: null),
-                IconButton(
-                    icon: Icon(
-                      Icons.pets,
-                      color: Colors.blue,
-                    ),
-                    onPressed: null),
-                IconButton(
-                    icon: Icon(
-                      Icons.people,
-                      color: Colors.blue,
-                    ),
-                    onPressed: null),
-                IconButton(
-                    icon: Icon(
-                      Icons.calendar_today,
-                      color: Colors.blue,
-                    ),
-                    onPressed: null),
-              ],
-            ),
-          ),
-        ),
+
         body: _body()
     );
   }
